@@ -1,12 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import Sultanate from './components/Sultanate';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <ScrollView>
+      <Text style={{fontWeight: 'bold'}}>WELCOME TO THE TRENCH CRUSADE!</Text>
+      <Text>This is a work in progress - eventually the aim is to have a fully functioning warband builder for the game TRENCH CRUSADE.</Text>
       <StatusBar style="auto" />
-    </View>
+      <Sultanate/>
+    </ScrollView>
   );
 }
 
