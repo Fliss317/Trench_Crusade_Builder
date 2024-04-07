@@ -1,34 +1,21 @@
-import { StyleSheet, Text, View, FlatList } from 'react-native';
-import { DataTable } from 'react-native-paper'; 
+import * as React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import SultanateMeleeWeapons from './SultanateMeleeWeapons';
 import SultanateRangedWeapons from './SultanateRangedWeapons';
 import SultanateArmour from './SultanateArmour';
 import SultanateEquipment from './SultanateEquipment';
+import StatBlock from './StatBlock';
 
 export default function YüzbaşıCaptain() {
+
     return (
     <View style={styles.container}>
-    <Text style={{fontWeight: 'bold'}}>1 Yüzbaşı Captain (70 Ducats):</Text>
+    <Text style={{fontWeight: 'bold'}}>1 Yüzbaşı Captain (70 ducats):</Text>
         <Text></Text>
     <Text style={{fontStyle: 'italic'}}>Military expeditions over the Great Iron Wall into No Man’s Land carry many risks, and their commanders are field officers known as Yüzbaşı. They are expected to lead from the front and their selection is solely on merit, with no consideration given to family pedigree or wealth.</Text>
-        <DataTable style={styles.container}> 
-        <DataTable.Header style={styles.tableHeader}> 
-            <DataTable.Title>Name</DataTable.Title> 
-            <DataTable.Title>Movement</DataTable.Title> 
-            <DataTable.Title>Ranged</DataTable.Title> 
-            <DataTable.Title>Melee</DataTable.Title> 
-            <DataTable.Title>Armour</DataTable.Title> 
-            <DataTable.Title>Base</DataTable.Title> 
-        </DataTable.Header> 
-        <DataTable.Row> 
-            <DataTable.Cell>Yüzbaşı</DataTable.Cell> 
-            <DataTable.Cell>6"/Infantry</DataTable.Cell> 
-            <DataTable.Cell>+2 Dice</DataTable.Cell> 
-            <DataTable.Cell>+2 Dice</DataTable.Cell>
-            <DataTable.Cell>0</DataTable.Cell>
-            <DataTable.Cell>32mm</DataTable.Cell>
-        </DataTable.Row> 
-        </DataTable>
+        <Text></Text>
+    <StatBlock move={'6"/Infantry'} ranged={'+2 dice'} melee={'+2 dice'} armour={0} base={'32mm'} />
+        <Text></Text>
     <Text style={{fontWeight: 'bold'}}>Equipment:</Text>
         <Text></Text>
         <SultanateMeleeWeapons/>

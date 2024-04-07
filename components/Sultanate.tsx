@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import YüzbaşıCaptain from './Captain';
+import JabireanAlchemist from './Alchemist';
 
 
 export default function Sultanate() {
     return (
     <View style={styles.container}>
         <YüzbaşıCaptain/>
+        <JabireanAlchemist/>
     </View>
     );
 }
