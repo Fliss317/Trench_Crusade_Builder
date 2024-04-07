@@ -16,6 +16,8 @@ export default function JabireanAlchemist() {
         <Text></Text>
     <Text style={{fontWeight: 'bold'}}>Equipment:</Text>
         <Text></Text>
+    <Text>The Alchemist may be equipped with any weapons, armour, or equipment from the lists below:</Text>
+        <Text></Text>
         <SultanateMeleeWeapons/>
         <Text></Text>
         <SultanateRangedWeapons/>

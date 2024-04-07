@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
-import Sultanate from './components/Sultanate';
+import Sultanate from './components/IronSultanate/Sultanate';
 import { PaperProvider } from 'react-native-paper';
 
 export default function App() {

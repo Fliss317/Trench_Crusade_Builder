@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import SultanateMeleeWeapons from './SultanateMeleeWeapons';
 import SultanateRangedWeapons from './SultanateRangedWeapons';
@@ -6,17 +5,18 @@ import SultanateArmour from './SultanateArmour';
 import SultanateEquipment from './SultanateEquipment';
 import StatBlock from './StatBlock';
 
-export default function YüzbaşıCaptain() {
-
+export default function Janissaries() {
     return (
     <View style={styles.container}>
-    <Text style={{fontWeight: 'bold'}}>1 Yüzbaşı Captain (70 ducats):</Text>
+    <Text style={{fontWeight: 'bold'}}>0-6 Janissaries (55 ducats each):</Text>
         <Text></Text>
-    <Text style={{fontStyle: 'italic'}}>Military expeditions over the Great Iron Wall into No Man’s Land carry many risks, and their commanders are field officers known as Yüzbaşı. They are expected to lead from the front and their selection is solely on merit, with no consideration given to family pedigree or wealth.</Text>
+    <Text style={{fontStyle: 'italic'}}>The janissaries are the Sultanate’s elite warriors, raised from childhood in the arts of war. Captured during raids upon the desolate northern and eastern marches beyond the Iron Wall, they are subjected to rigorous martial training and indoctrination from an early age. On the battlefield, Janissaries excel at devastating counter-charges, crushing the enemy elite formations and acting as the bodyguard for high-ranking individuals.</Text>
         <Text></Text>
-    <StatBlock move={'6"/Infantry'} ranged={'+2 dice'} melee={'+2 dice'} armour={0} base={'32mm'} />
+    <StatBlock move={'6"/Infantry'} ranged={'+1 dice'} melee={'+1 dice'} armour={0} base={'32mm'} />
         <Text></Text>
     <Text style={{fontWeight: 'bold'}}>Equipment:</Text>
+        <Text></Text>
+    <Text>Janissaries can be equipped with any weapons, armour, or equipment from the lists below:</Text>
         <Text></Text>
         <SultanateMeleeWeapons/>
         <Text></Text>
@@ -28,13 +28,13 @@ export default function YüzbaşıCaptain() {
         <Text></Text>
     <Text style={{fontWeight: 'bold'}}>Abilities:</Text>
         <Text></Text>
-    <Text><Text style={{fontStyle: 'italic'}}>Tough</Text>: Yüzbaşı captains are selected amongst the very best soldiers of the Sultanate, and their bodies are hardened against injury by the Jabirean arts. They are subject to the rules for TOUGH creatures.</Text>
+    <Text><Text style={{fontStyle: 'italic'}}>Strong</Text>: Janissaries ignore the effect of the Keyword HEAVY on any weapon they wield.</Text>
         <Text></Text>
-    <Text><Text style={{fontStyle: 'italic'}}>Mubarizun</Text>: Yüzbaşı are expected to face the mightiest of the Sultan's enemies in personal combat, inspiring their troops to victory through personal prowess. Yüzbaşı are Immune to the effects of the Keyword FEAR, and add +1 DICE to Injury rolls against TOUGH opponents.</Text>
+    <Text><Text style={{fontStyle: 'italic'}}>Counter-Charge</Text>: If the first move a Janissary makes during their Activation is a Charge, they can add +1 DICE to their Melee Attack ACTIONS during this Activation.</Text>
         <Text></Text>
     <Text style={{fontWeight: 'bold'}}>Keywords:</Text>
         <Text></Text>
-    <Text style={{fontStyle: 'italic'}}>ELITE, SULTANATE, TOUGH</Text>
+    <Text style={{fontStyle: 'italic'}}>SULTANATE, STRONG</Text>
     </View>
     );
 }
