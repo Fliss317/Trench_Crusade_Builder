@@ -6,7 +6,7 @@ import AzebInfantry from './Azebs';
 import Sappers from './SultanateSappers';
 import JabireanLions from './JabireanLions';
 import Janissaries from './Janissaries';
-
+import BrazenBull from './BrazenBull';
 
 export default function Sultanate() {
     return (
@@ -20,6 +20,7 @@ export default function Sultanate() {
         <Sappers/>
         <JabireanLions/>
         <Janissaries/>
+        <BrazenBull/>
     </View>
     );
 }
