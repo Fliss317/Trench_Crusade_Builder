@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import RNPickerSelect from 'react-native-picker-select';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 const ArmourDropdown = () => {
     const [selectedValue, setSelectedValue] = useState(null); const placeholder = {
@@ -12,7 +12,9 @@ const ArmourDropdown = () => {
         {label: 'Standard Armour', value: '20 ducats'},
         {label: 'Heavy Armour', value: '40 ducats'},
         {label: 'Alchemist Armour', value: '50 ducats'},
-    ]; return (
+    ];
+    
+    return (
         <View>
           <Text>Select armour:</Text>
           <RNPickerSelect
@@ -22,6 +24,10 @@ const ArmourDropdown = () => {
             value={selectedValue}
         />
         {selectedValue && <Text>Cost: {selectedValue}</Text>}
+        <Text></Text>
+        <TouchableOpacity onPress={() => setSelectedValue(null)}>
+        <Text>Reset Selection</Text>
+      </TouchableOpacity>
         </View>
     );
    };
